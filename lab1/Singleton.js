@@ -1,21 +1,17 @@
 let Singleton = (function () {
-    let instance;
+    let recoverHeathAmount;
 
     function InstanceConstructor() {
-        console.log("The istance is created only once");
-        let someobject={
-            name:"The only object",
-            isAnObject:true
-        }
-        return someobject;
+        recoverHeathAmount=100;
+        return recoverHeathAmount;
  }
 
     return {
         getInstance: function () {
-            if (!instance) {
-                instance = InstanceConstructor();
+            if (!recoverHeathAmount) {
+                recoverHeathAmount = InstanceConstructor();
             }
-            return instance;
+            return recoverHeathAmount;
         }
     };
 })();
@@ -36,8 +32,8 @@ let Singleton = (function () {
     
     console.log("Objects are the same?");
     IsTheSame(someVar,someVar1);
-
-   Singleton.InstanceConstructor();
+   console.log(someVar);
+   //Singleton.InstanceConstructor();
 
 
 
