@@ -1,4 +1,4 @@
-
+/*
 let pencil={
     colour:"red",
     HasWritingInc:true,
@@ -21,3 +21,8 @@ let felt_tip_pen={
 
 felt_tip_pen.write();
 console.log("I have the same colour as pen. Is's", felt_tip_pen.colour);
+
+ */
+
+
+
